@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_bg">#112950</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="grey">#e0e0e0</color>
+    <color name="transparent">#00000000</color>
+    <color name="hint_grey">#D3D3D3</color>
+    <color name="blue">#0000ff</color>
+    <color name="line">#5e87b3</color>
+    
+    <color name="text_blue_506E96">#506E96</color>
+    <color name="text_blue_BCD5FE">#BCD5FE</color>
+    <color name="text_login_username_7FA0C9">#7FA0C9</color>
+    <color name="text_login_button_B8D2F9">#B8D2F9</color>
+    <color name="text_share">#af9682</color>
+    <color name="text_share_bg">#1f2024</color>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/picture_viewer_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/header_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/picture_viewer_share"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/share_bg"
+        android:visibility="gone"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/picture_viewer_share_child_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/picture_viewer_share_sina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/picture_viewer_share_sina_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_sina_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/picture_viewer_share_sina_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dip"
+                    android:text="新浪微博"
+                    android:textColor="@color/text_share" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/picture_viewer_share_tencent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/picture_viewer_share_tencent_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_tencent_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/picture_viewer_share_tencent_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dip"
+                    android:text="腾讯微博"
+                    android:textColor="@color/text_share" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/picture_viewer_share_weixin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/picture_viewer_share_weixin_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_weixin_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/picture_viewer_share_weixin_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dip"
+                    android:text="微信"
+                    android:textColor="@color/text_share" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/share_bottom_btn_width"
+            android:layout_height="@dimen/share_bottom_btn_height"
+            android:layout_below="@id/picture_viewer_share_child_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/bg_button2"
+            android:text="分享到..."
+            android:textColor="@color/text_blue_BCD5FE"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

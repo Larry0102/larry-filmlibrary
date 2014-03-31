@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/movie_list_item_timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/movie_list_item_line_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/movie_list_item_line"
+                android:layout_width="2dip"
+                android:layout_height="90dip"
+                android:layout_centerInParent="true"
+                android:background="@color/line" />
+
+            <ImageView
+                android:id="@+id/movie_list_item_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_point" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/movie_list_item_timeline_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/movie_list_item_line_layout" >
+
+            <TextView
+                android:id="@+id/movie_list_item_timeline_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03"
+                android:textColor="@color/text_blue_506E96"
+                android:textSize="22dip" />
+
+            <TextView
+                android:id="@+id/movie_list_item_timeline_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_list_item_timeline_day"
+                android:text="8月"
+                android:textColor="@color/text_blue_506E96" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/movie_list_item_icon"
+        android:layout_width="@dimen/movie_item_width"
+        android:layout_height="@dimen/movie_item_height"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/movie_list_item_timeline"
+        android:background="@drawable/movie_pic02" />
+
+    <ImageView
+        android:id="@+id/movie_list_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:src="@drawable/icon_right" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toLeftOf="@id/movie_list_item_right"
+        android:layout_toRightOf="@id/movie_list_item_icon" >
+
+        <RelativeLayout
+            android:id="@+id/movie_list_item_name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/movie_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="18dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="龙纹身的女孩"
+                android:textColor="@color/text_blue_506E96"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/movie_list_item_name_attach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/movie_list_item_name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/movie_list_item_name"
+                android:background="@drawable/icon_name_attach"
+                android:singleLine="true"
+                android:text="2D IMAX"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/movie_list_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_list_item_name_layout"
+            android:singleLine="true"
+            android:text="8月3日"
+            android:textColor="@color/text_blue_506E96"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/movie_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/movie_list_item_date"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/movie_list_item_date" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/movie_list_item_time1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="13:00"
+                    android:textColor="@color/text_blue_506E96"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/movie_list_item_time2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="18:00"
+                    android:textColor="@color/text_blue_506E96"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/movie_list_item_time3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="21:00"
+                    android:textColor="@color/text_blue_506E96"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

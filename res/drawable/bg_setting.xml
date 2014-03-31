@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 实心 -->
+    <solid android:color="#224b8f" />
+    
+    <!-- 描边 -->
+    <stroke
+        android:width="3dip"
+        android:color="#103c7d" />
+    
+
+    <padding
+        android:bottom="3dip"
+        android:left="3dip"
+        android:right="3dip"
+        android:top="3dip" />
+
+    <!-- 圆角 -->
+    <corners android:radius="10dp" />
+
+</shape>

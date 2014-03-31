@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电影资料馆</string>
+    <string name="title_news_center">新闻中心</string>
+    <string name="title_user_center">个人中心</string>
+    <string name="settings">系统设置</string>
+    <string name="feedback">反馈</string>
+    <string name="about">关于</string>
+    <string name="default_browse_style">默认浏览模式：</string>
+    <string name="alarm_setting">提醒设置</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="appraise">评价</string>
+    <string name="tell_friends">推荐给朋友</string>
+    <string name="feedback_idea">意见反馈</string>
+    <string name="version">版本</string>
+    <string name="version_info">版本信息</string>
+    
+    <string name="poster">海报</string>
+    <string name="list">列表</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="username">账号：</string>
+    <string name="password">密码：</string>
+    <string name="username_hint">请输入手机号/邮箱</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+    <string name="login_i_collect">我喜欢%s部影片</string>
+
+</resources>

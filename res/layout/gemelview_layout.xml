@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gemelview_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_gemel"
+    android:padding="3dip"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/gemelview_left_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_button2"
+        android:text="近期热映"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/gemelview_right_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:text="排片表"
+        android:textColor="@color/white" />
+
+</LinearLayout>
